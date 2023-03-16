@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  background-color: bisque;
+}
+
+#board {
+  display: flex;
+  width: 600px;
+  height: 600px;
+  flex-wrap: wrap;
+  padding: 40px;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.cell {
+  display: flex;
+  flex-basis: 33%;
+  align-items: center;
+  justify-content: center;
+  font: 50px;
+}
+
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+div > :nth-child(3n + 2) {
+  border-left: 4px solid orangered;
+  border-right: 4px solid orangered;
+}
+
+div > :nth-child(n + 4):nth-child(-n + 6) {
+  border-bottom: 4px solid orangered;
+  border-top: 4px solid orangered;
+}
